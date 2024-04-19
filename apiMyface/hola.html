@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background: #5C2684">
+    <div style="max-width: 100%; height: 100vh; position: relative; background: white;">
+        <div style="width: 100%; height: 16%; position: absolute; background: #5C2684"></div>
+        <div style="width: 100%; height: 34%; top: 16%; position: absolute;">
+            <div style="width: 100%; height: 75%; position: absolute; background: white; border-radius: 16px;">
+            </div>
+            <div
+                style="width: 100%; height: 28%; top: -7%; position: absolute; background: white; border-top-left-radius: 16px; border-top-right-radius: 16px; border: 1px solid">
+            </div>
+            <div
+                style="width: 42%; left: 29%; top: 7%; position: absolute; text-align: center; color: #62248F; font-size: 13px; font-family: Inter; font-weight: 600; word-wrap: break-word">
+                Face</div>
+            <div style="width: 100%; height: 0; top: 20%; position: absolute; border-top: 10px #62248F solid">
+            </div>
+            <div style="width: 81%; height: 19%; left: 10%; top: 27%; position: absolute"></div>
+        </div>
+        <img style="max-width: 100%; max-height: 100%;  top: 40%; position: relative; transform: translate(-50%, -50%); border-radius: 10px; transform: rotate(90deg);"
+            src="{{ url_for('video_feed') }}" />
+    </div>
+</body>
+
+</html>

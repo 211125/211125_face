@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OsvaldoFace</title>
+    <style>
+        /* Estilos para el contenedor principal */
+        body, html {
+            height: 100%;
+            margin: 0;
+          }
+
+        /* Estilos para el div contenedor de la imagen */
+        .image-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            margin-top: 20%; /* Márgen superior del 20% del viewport height */
+        }
+
+        /* Rotar la imagen */
+        .rotated-image {
+            transform: rotate(90deg); /* Ajusta el ángulo de rotación según sea necesario */
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Div contenedor de la imagen -->
+    <div class="image-container">
+        <!-- Agrega la clase "rotated-image" a la etiqueta de imagen para aplicar la rotación -->
+        <img src="{{ url_for('video_feed') }}" alt="Video Stream" class="rotated-image">
+    </div>
+</body>
+</html>
